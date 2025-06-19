@@ -19,7 +19,7 @@
 .heading,
 .heading-overlay {
   font-size: 11dvw;
-  font-family: 'windhavi';
+  font-family: 'windhavi', serif;
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 400;
@@ -54,10 +54,19 @@
   overflow: hidden;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
 .txt {
-  font-family: 'mono';
+  font-family: 'mono', sans-serif;
   font-size: 5dvw;
   color: var(--ecru);
+  animation: rotate 5s linear infinite;
 }
 
 .about {
