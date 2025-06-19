@@ -3,17 +3,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 5dvw;
-  border-bottom: 1px solid var(--white);
+  background-color: var(--night);
 }
 
 .logo a {
-  font-weight: 900;
+  font-family: 'windhavi';
   text-transform: capitalize;
   line-height: 1.2;
+  color: var(--eggshell);
 }
 
 .logo-nav-link a {
-  font-size: 20px;
+  font-size: 24px;
   border: 1px dotted transparent;
   transition: border 0.3s linear;
 }
@@ -24,35 +25,40 @@
   column-gap: 4vw;
 }
 
-.nav-links a {
+.nav-link a {
   position: relative;
+  font-family: 'windhavi';
   font-size: 18px;
   text-transform: capitalize;
   line-height: 1.2;
   border: 1px dotted transparent;
-  color: var(--white);
+  color: var(--eggshell);
   transition: border 0.3s linear;
 }
 
-.nav-links a::after {
+.nav-link a::after {
   position: absolute;
   content: '';
-  top: 0;
   left: 0;
   height: 100%;
   width: 0;
-  border-bottom: 2px solid var(--white);
-  transition: width 0.3s linear;
+  border-bottom: 2px solid var(--olive);
+  transition: width 0.2s linear;
 }
 
-.nav-links a:hover::after {
+.nav-link a:hover::after {
   width: 100%;
 }
 
-.logo a:focus,
-.nav-links a:focus {
+.logo a:focus-visible,
+.nav-link a:focus-visible {
   outline: none;
-  border: 1px dotted var(--white);
+  border: 1px dotted var(--eggshell);
+}
+
+.nav-link a:active,
+.burger-menu-icon:active {
+  border-color: transparent;
 }
 
 .burger-menu-icon {
@@ -62,25 +68,56 @@
   flex-direction: column;
   align-items: end;
   justify-content: space-between;
+  border: 1px solid transparent;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .bar {
   height: 2px;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--eggshell);
 }
 
 .middle-bar {
   width: 60%;
+  transition: width 0.3s linear;
+}
+
+.burger-menu-icon:hover .middle-bar,
+.burger-menu-icon:focus .middle-bar {
+  width: 100%;
+}
+
+.burger-menu-icon:active {
+  border-color: transparent;
+}
+
+.burger-menu-icon:focus-visible {
+  border: 1px dotted var(--eggshell);
+  outline: none;
 }
 
 @media (min-width: 769px) {
   .nav-links {
     display: flex;
   }
-
+  
   .burger-menu-icon {
     display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    padding: 1dvw 5dvw;
+  }
+
+  .logo-nav-link a {
+    font-size: 2dvw;
+  }
+
+  .nav-link a {
+    font-size: 1.4dvw;
   }
 }
