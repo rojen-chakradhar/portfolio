@@ -107,6 +107,7 @@
 .item {
   height: 100px;
   aspect-ratio: 1;
+  overflow: hidden;
   background-color: var(--moss);
 }
 
