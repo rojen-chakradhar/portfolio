@@ -19,12 +19,6 @@ body {
 }
 
 :root {
-  --pink-300: #f7b5cd;
-  --moonstone: #7aa6b3;
-  --dark-moss: #525333;
-  --olive: #6f6134;
-  --black-olive: #3d402f;
-  --ecru: #e1c68f;
   --moss: #576238;
   --eggshell: #f0eadc;
   --night: #141414;
@@ -33,9 +27,4 @@ body {
 @font-face {
   font-family: 'windhavi';
   src: url('../assets/fonts/Windhavi.woff');
-}
-
-@font-face {
-  font-family: 'mono';
-  src: url('../assets/fonts/MonogramLeavesWreath-ZppxK.woff');
 }
