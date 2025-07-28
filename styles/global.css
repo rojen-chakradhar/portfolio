@@ -142,6 +142,10 @@ body {
     display: none;
   }
 
+  .sidenav{
+    display: none;
+  }
+
   .navbar {
     padding: 1dvw 5dvw;
   }
