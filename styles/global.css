@@ -142,8 +142,10 @@ body {
     display: none;
   }
 
-  .sidenav{
+  .sidenav:focus{
     display: none;
+    pointer-events: none;
+    user-select: none;
   }
 
   .navbar {

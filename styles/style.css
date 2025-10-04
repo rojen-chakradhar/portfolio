@@ -64,7 +64,7 @@
   line-height: 1.5;
 }
 
-.grid2 {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
