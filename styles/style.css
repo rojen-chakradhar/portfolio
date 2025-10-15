@@ -482,7 +482,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: var(--p-side);
 }
@@ -491,7 +491,6 @@ body {
   aspect-ratio: 1/1;
   width: 100%;
   color: var(--white);
-  background-color: var(--green);
   overflow: hidden;
 }
 
