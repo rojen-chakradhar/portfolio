@@ -26,7 +26,7 @@ body {
   --sub-heading-size: 2vw;
   --nav-size: 1.2rem;
   --para-size: 1rem;
-  --icon-size: 1.2rem;
+  --icon-size: 1.5rem;
   --para-font: "Asul", sans-serif;
   --heading-font: 'windhavi', sans-serif;
   --p-up: 15vw;
@@ -398,8 +398,6 @@ body {
 } */
 
 .hero {
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -433,8 +431,13 @@ body {
   text-transform: capitalize;
   border: 2px solid var(--green);
   color: var(--white);
-  background-color: transparent;
+  background-color: var(--black);
   cursor: pointer;
+}
+
+.tabs .cta {
+  width: 100%;
+  border: none;
 }
 
 .cta:hover {
@@ -461,6 +464,44 @@ body {
   justify-content: space-between;
 }
 
+.projects {
+  width: 100%;
+  padding: var(--p-side);
+}
+
+.tabs {
+  margin: var(--p-side) 0;
+  padding: 2px;
+  column-gap: 2px;
+  background-color: var(--green);
+}
+
+.active {
+  background-color: var(--green);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--p-side);
+}
+
+.project {
+  aspect-ratio: 1/1;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--green);
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .icons {
   justify-content: center;
   column-gap: var(--p-side);
@@ -477,6 +518,10 @@ body {
 }
 
 .icon:hover {
+  background-color: var(--green);
+}
+
+.about .icon {
   background-color: var(--green);
 }
 
