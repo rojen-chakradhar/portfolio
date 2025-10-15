@@ -15,7 +15,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   background-color: var(--night);
 }
 
@@ -24,6 +24,7 @@ body {
   --white: #f0eadc;
   --black: #141414;
   --heading-size: 10vw;
+  --sub-heading-size: 2vw;
   --nav-size: 1.2rem;
   --para-size: 1rem;
   --icon-size: 1.2rem;
@@ -413,6 +414,16 @@ body {
   cursor: default;
 }
 
+.sub-heading {
+  font-size: var(--sub-heading-size);
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--white);
+  cursor: default;
+}
+
 .cta {
   width: fit-content;
   padding: 1vw var(--p-side);
@@ -421,7 +432,7 @@ body {
   font-weight: normal;
   line-height: 1;
   text-transform: capitalize;
-  border: 1px solid var(--green);
+  border: 2px solid var(--green);
   color: var(--white);
   background-color: transparent;
   cursor: pointer;
@@ -440,22 +451,14 @@ body {
   color: var(--white);
 }
 
-.about {
-  height: 100dvh;
-  width: 100%;
-  padding: var(--p-side);
-  overflow: hidden;
-}
-
-.support {
+.fcsb {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
+.about .icons {
+  margin-top: var(--para-size);
   justify-content: space-between;
 }
 
@@ -469,7 +472,7 @@ body {
   aspect-ratio: 1/1;
   justify-content: center;
   font-size: var(--icon-size);
-  border: 1px solid var(--green);
+  border: 2px solid var(--green);
   color: var(--white);
   cursor: pointer;
 }
