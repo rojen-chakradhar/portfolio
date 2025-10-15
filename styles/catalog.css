@@ -8,7 +8,7 @@
   font-size: var(--para-size);
 }
 
-i{
+.project i{
   height: max-content;
   width: max-content;
   font-size: var(--icon-size);
@@ -17,7 +17,7 @@ i{
   cursor: pointer;
 }
 
-i:hover{
+.project i:hover{
   color: var(--green);
   background-color: var(--white);
 }
