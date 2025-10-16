@@ -1,0 +1,167 @@
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: -100dvw;
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr max-content;
+  row-gap: 20px;
+  padding: 20px 5dvw;
+  background-color: var(--black);
+  z-index: 1000;
+  transition: right 0.3s linear;
+}
+
+.close-icon-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.close-icon {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.close-icon:hover,
+.close-icon:active,
+.close-icon:focus {
+  transform: rotate(360deg);
+}
+
+.close-icon:focus-visible {
+  outline: none;
+  border: 1px solid var(--white);
+}
+
+.close-icon-bar {
+  position: absolute;
+  height: 5px;
+}
+
+.close-icon-left-bar {
+  transform: rotate(45deg);
+}
+
+.close-icon-right-bar {
+  transform: rotate(-45deg);
+}
+
+.side-nav-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  row-gap: 30px;
+}
+
+.side-nav-logo a {
+  font-family: 'windhavi';
+  font-size: 33px;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  border: .1px solid transparent;
+}
+
+.side-nav-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.side-nav-link a {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.side-nav-link a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--white);
+  transition: height 0.3s linear;
+  z-index: 2;
+}
+
+.side-nav-link a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--white);
+  transition: height 0.3s linear;
+  z-index: 2;
+}
+
+.side-nav-link a:hover::after,
+.side-nav-link a:hover::before {
+  height: 50%;
+}
+
+.side-nav-link a span {
+  position: absolute;
+  left: 0;
+  font-family: 'windhavi';
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 2;
+  transition: color 0.3s linear;
+  z-index: 3;
+}
+
+.arrow-up-icon {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  font-weight: 900;
+  transition: color 0.3s linear, webkit-text-stroke 0.3s linear;
+  z-index: 3;
+}
+
+.side-nav-link a:hover span,
+.side-nav-link a:hover .arrow-up-icon {
+  color: var(--black);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link a {
+  height: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+
+.social-link a:hover {
+  color: var(--black);
+  background-color: var(--white);
+}

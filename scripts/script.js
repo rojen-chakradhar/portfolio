@@ -1,5 +1,5 @@
 let tab = document.querySelectorAll(".tab");
-let projects = document.querySelectorAll(".project");
+let projects = document.querySelectorAll(".project-card");
 
 tab.forEach((elm) => {
 	elm.addEventListener("click", () => {

@@ -1,0 +1,57 @@
+@media (min-width: 769px) {
+	.nav-links {
+		display: flex;
+	}
+
+	.burger-menu-icon {
+		display: none;
+	}
+
+	.sidenav:focus {
+		display: none;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	.navbar {
+		padding: 1dvw var(--p-side);
+	}
+
+	.logo-nav-link a {
+		font-size: 2dvw;
+	}
+
+	.nav-link a {
+		font-size: 1.4dvw;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .side-nav-logo a {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .side-nav-logo a {
+    font-size: 72px;
+  }
+
+  .side-nav-link a {
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .side-nav-link a span {
+    font-size: 40px;
+  }
+
+  .arrow-up-icon {
+    font-size: 50px;
+  }
+
+  .social-link a {
+    height: 50px;
+    font-size: 30px;
+  }
+}
