@@ -41,7 +41,8 @@
 }
 
 .burger-menu-icon {
-  display: none;
+  /* display: none; */
+  font-size: var(--icon-size);
   color: var(--white);
 	cursor: pointer;
 }
