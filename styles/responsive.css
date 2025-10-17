@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
 	.nav-links {
 		display: flex;
 	}
@@ -74,4 +74,29 @@
 		height: 50px;
 		font-size: 30px;
 	}
+} */
+
+/* large screens */
+@media (min-width: 1441px) {
+  :root{
+    --p: 10vw;
+    --heading-size: 15rem;
+    --sub-heading-size: 5rem;
+    --para-size: 4rem;
+    --nav-size: 4rem;
+    --icon-size: 5rem;
+  }
+  .about {
+    height: max-content;
+    row-gap: var(--p);
+  }
+  .hero .para {
+    width: 100%;
+  }
+  .cta {
+    padding: var(--para-size) var(--p);
+  }
+  .tabs .cta {
+    padding: var(--para-size) 0;
+  }
 }

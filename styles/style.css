@@ -23,8 +23,8 @@ body {
 	--green: #576238;
 	--white: #f0eadc;
 	--p: 5vw;
-	--heading-size: 10vw;
-	--sub-heading-size: 2vw;
+	--heading-size: 8rem;
+	--sub-heading-size: 1.5rem;
 	--para-size: 1rem;
 	--nav-size: 1.2rem;
 	--icon-size: 1.5rem;
@@ -109,6 +109,7 @@ a::selection {
 }
 
 .hero .para {
+	width: 80%;
 	margin: 0;
 	text-transform: capitalize;
 }
@@ -139,7 +140,7 @@ a::selection {
 .icons {
 	justify-content: center;
   flex-wrap: wrap;
-	column-gap: var(--p);
+	gap: var(--p);
 }
 
 .icon {
