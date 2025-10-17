@@ -1,3 +1,64 @@
+.projects {
+	width: 100%;
+	padding: var(--p);
+}
+
+.tabs {
+	margin: var(--p) 0;
+	padding: 2px;
+	column-gap: 2px;
+	background-color: var(--green);
+}
+
+.active {
+	background-color: var(--green);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: var(--p);
+}
+
+.project-box {
+	aspect-ratio: 1/1;
+	width: 100%;
+	color: var(--white);
+	overflow: hidden;
+}
+
+.project {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.project-box:hover .project-info {
+	transform: translateY(0);
+	transition: transform 0.8s ease;
+}
+
+.project-image,
+.project-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.project-info {
+	transform: translateY(101%);
+	transition: transform 0.8s ease;
+	background-color: var(--green);
+}
+
 .name {
 	font-size: var(--sub-heading-size);
 	text-transform: capitalize;
@@ -12,7 +73,7 @@
 	height: max-content;
 	width: max-content;
 	font-size: var(--icon-size);
-	border: 1px solid var(--white);
+	border: 2px solid var(--white);
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -20,28 +81,4 @@
 .project i:hover {
 	color: var(--green);
 	background-color: var(--white);
-}
-
-.project {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.project-card:hover .project-info {
-	transform: translateY(0);
-	transition: transform 0.8s ease;
-}
-
-.project-image,
-.project-info {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.project-info {
-	transform: translateY(100%);
-	transition: transform 0.8s ease;
-	background-color: var(--green);
 }
