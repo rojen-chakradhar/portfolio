@@ -54,6 +54,7 @@ img {
 }
 
 .project-info {
+	padding: 1em;
 	transform: translateY(101%);
 	transition: transform 0.8s ease;
 	background-color: var(--green);
@@ -75,6 +76,7 @@ img {
 	font-size: var(--icon-size);
 	border: 2px solid var(--white);
 	border-radius: 50%;
+	color: var(--white);
 	cursor: pointer;
 }
 
