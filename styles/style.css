@@ -23,6 +23,7 @@ body {
 	--green: #576238;
 	--white: #f0eadc;
 	--p: 5vw;
+	--p-side: 10vw;
 	--heading-size: 8rem;
 	--sub-heading-size: 1.5rem;
 	--para-size: 1rem;
@@ -60,7 +61,7 @@ a::selection {
 .f-s {
 	height: 100dvh;
 	width: 100%;
-	padding: var(--p);
+	padding: var(--p) var(--p-side);
 	overflow: hidden;
 }
 
