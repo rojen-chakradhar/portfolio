@@ -17,7 +17,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	gap: var(--p);
 }
 
@@ -46,6 +46,18 @@
 	height: 100%;
 }
 
+.won::after {
+	content: "1st";
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 0.5rem;
+	font-family: var(--para-font);
+	font-size: var(--icon-size);
+	color: var(--white);
+	background-color: goldenrod;
+}
+
 img {
 	height: 100%;
 	width: 100%;
@@ -55,12 +67,14 @@ img {
 
 .project-info {
 	padding: 1em;
+	font-family: var(--para-font);
 	transform: translateY(101%);
 	transition: transform 0.8s ease;
 	background-color: var(--green);
 }
 
 .name {
+	font-family: var(--heading-font);
 	font-size: var(--sub-heading-size);
 	text-transform: capitalize;
 	text-align: center;

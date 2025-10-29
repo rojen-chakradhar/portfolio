@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/catalog.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link href= "https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -33,12 +35,13 @@
           <li class="nav-link about-nav-link">
             <a href="#projects">projects</a>
           </li>
-          <li class="nav-link catalog-nav-link">
+          <!-- <li class="nav-link catalog-nav-link">
             <a href="#blog">blog</a>
-          </li>
+          </li> -->
           <li class="nav-link contact-nav-link">
             <a href="#contact">contact</a>
           </li>
+          <!-- <i class="bxl bx-menu-wider icon burger-menu"></i> -->
         </ul>
         <!-- <details class="sidenav">
           <summary>
@@ -61,32 +64,35 @@
         <section class="container">
           <h3 class="sub-heading">skills :</h3>
           <section class="icons dfac">
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-html5"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-html5"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-css3-alt"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-css3"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="ri-tailwind-css-line"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-tailwind-css"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-js"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-javascript"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-react"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-gsap"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-github"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-react"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-figma"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-github"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-wordpress"></i>
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-figma"></i>
             </article>
-            <article class="icon dfac b-bg">
-              <i class="fa-brands fa-webflow"></i>
+            <!-- <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-wordpress"></i>
+            </article> -->
+            <article class="boxed-icon dfac b-bg">
+              <i class="bxl bx-webflow"></i>
             </article>
           </section>
         </section>
@@ -110,25 +116,49 @@
         </section>
         <section class="grid">
           <article class="project-box games">
-            <div class="project">
+            <div class="project won">
               <picture class="project-image">
-                <img src="https://img.itch.zone/aW1nLzIzMzkzODE4LnBuZw==/315x250%23c/5COdt0.png" alt="img">
+                <img loading="lazy" src="https://img.itch.zone/aW1nLzIzMzkzODE4LnBuZw==/315x250%23c/5COdt0.png" alt="img">
               </picture>
               <div class="project-info dfac fcsb">
                 <p class="name">daydream parkour</p>
-                <p class="desc">Leave Me</p>
+                <p class="desc">A small parkour game that won me <strong>Daydream Gamejam</strong> organized by <strong>Hackclub</strong> globally.
+                  <br><br>Engine: <strong>Godot</strong>
+                  <br>Type: <strong>Web</strong>
+                  <br>Style: <strong>retro pixel art</strong>
+                  <br>Language: <strong>Gdscript</strong>
+                </p>
                 <a href="https://rojenrandom.itch.io/daydream-parkour" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-box websites">
+            <div class="project">
+              <picture class="project-image">
+                <img loading="lazy" src="./assets/images/smoothiejuicy.netlify.app_pc.png" alt="img">
+              </picture>
+              <div class="project-info dfac fcsb">
+                <p class="name">smoothie juicy</p>
+                <p class="desc">A site where u can buy <strong>Smoothie Juice</strong>.
+                  <br><br>Type: <strong>Web</strong>
+                  <br>Language: <strong>html, css, js</strong>
+                </p>
+                <a href="https://smoothiejuicy.netlify.app/" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
               </div>
             </div>
           </article>
           <article class="project-box websites misc">
             <div class="project">
               <picture class="project-image">
-                <img src="./assets/images/swaphead.jpg" alt="img">
+                <img loading="lazy" src="./assets/images/swaphead.jpg" alt="img">
               </picture>
               <div class="project-info dfac fcsb">
-                <p class="name">swap head</p>
-                <p class="desc">Leave Me</p>
+                <p class="name">swap heads</p>
+                <p class="desc">Landing page of a fictional business named <strong>Swap Heads</strong>.
+                  <br><br>Type: <strong>Landing page</strong>
+                  <br>Style: <strong>retro classic</strong>
+                  <br>Language: <strong>html, css, js</strong>
+                </p>
                 <a href="https://swapheads.netlify.app" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
               </div>
             </div>
@@ -136,40 +166,43 @@
           <article class="project-box websites misc">
             <div class="project">
               <picture class="project-image">
-                <img src="./assets/images/weatherchecker.jpg" alt="img">
+                <img loading="lazy" src="./assets/images/weatherchecker.jpg" alt="img">
               </picture>
               <div class="project-info dfac fcsb">
                 <p class="name">weather checker</p>
-                <p class="desc">Leave Me</p>
+                <p class="desc">A small joke <strong>Weather Checker</strong> site.
+                  <br><br>Type: <strong>Web</strong>
+                  <br>Language: <strong>html, css, js</strong>
+                </p>
                 <a href="https://rojen-weatherchecker.netlify.app/" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
               </div>
             </div>
           </article>
           <!-- <article class="project-box websites">
             <picture>
-              <img src="https://plus.unsplash.com/premium_photo-1760428410219-8b764bb4562f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="img">
-            </picture>
-          </article> -->
-          <article class="project-box misc">
-            <picture>
-              <img src="https://images.unsplash.com/photo-1759932713888-0f131d54f88e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500" alt="img">
+              <img loading="lazy" src="https://plus.unsplash.com/premium_photo-1760428410219-8b764bb4562f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="img">
             </picture>
           </article>
           <article class="project-box misc">
             <picture>
-              <img src="https://images.unsplash.com/photo-1756806382059-6887c67e2009?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="img">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1759932713888-0f131d54f88e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500" alt="img">
+            </picture>
+          </article>
+          <article class="project-box misc">
+            <picture>
+              <img loading="lazy" src="https://images.unsplash.com/photo-1756806382059-6887c67e2009?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="img">
             </picture>
           </article>
           <article class="project-box games">
             <picture>
-              <img src="https://images.unsplash.com/photo-1753952253400-da11f889ee3f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4OHxDRHd1d1hKQWJFd3x8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500" alt="img">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1753952253400-da11f889ee3f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI4OHxDRHd1d1hKQWJFd3x8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500" alt="img">
             </picture>
           </article>
           <article class="project-box websites">
             <picture>
-              <img src="https://plus.unsplash.com/premium_photo-1759495777985-90e17171c242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500" alt="img">
+              <img loading="lazy" src="https://plus.unsplash.com/premium_photo-1759495777985-90e17171c242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500" alt="img">
             </picture>
-          </article>
+          </article> -->
         </section>
       </section>
       <!-- Footer -->
@@ -177,42 +210,42 @@
         <h2 class="heading w-t">contact me</h2>
         <section class="icons dfac">
           <a href="mailto:rojenchakradhar72@gmail.com" target="_blank">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-solid fa-envelope"></i>
             </article>
           </a>
           <!-- <a href="https://www.steam.com" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-steam"></i>
             </article>
           </a> -->
           <a href="https://github.com/rojen-chakradhar" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-github"></i>
             </article>
           </a>
           <!-- <a href="https://rojenrandom.itch.io" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-itch-io"></i>
             </article>
           </a> -->
           <a href="https://www.instagram.com/rojen.007" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-instagram"></i>
             </article>
           </a>
           <a href="https://linkedin.com/in/rojenchakradhar" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-linkedin"></i>
             </article>
           </a>
           <a href="https://www.youtube.com/@rojenrandom" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-youtube"></i>
             </article>
           </a>
           <!-- <a href="https://www.facebook.com/rojenchakradhar" target="_black">
-            <article class="icon dfac b-bg">
+            <article class="boxed-icon dfac b-bg">
               <i class="fa-brands fa-facebook"></i>
             </article>
           </a> -->

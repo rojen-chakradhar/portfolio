@@ -65,6 +65,10 @@ a::selection {
 	overflow: hidden;
 }
 
+.about {
+	height: 110dvh;
+}
+
 .dfac {
 	display: flex;
 	align-items: center;
@@ -145,6 +149,12 @@ a::selection {
 }
 
 .icon {
+	font-size: var(--icon-size);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.boxed-icon {
 	height: var(--p);
 	aspect-ratio: 1/1;
 	justify-content: center;
@@ -154,7 +164,7 @@ a::selection {
 	cursor: pointer;
 }
 
-.icon:hover {
+.boxed-icon:hover {
 	background-color: var(--green);
 }
 
@@ -164,6 +174,7 @@ a::selection {
 }
 
 .about .icon {
+	font-size: calc(var(--icon-size) + 0.5rem);
 	background-color: var(--green);
 }
 
