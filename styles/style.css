@@ -109,7 +109,7 @@ a::selection {
 	font-family: var(--heading-font);
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 1.2;
+	line-height: 1;
 	color: var(--white);
 	cursor: default;
 }
@@ -129,7 +129,7 @@ a::selection {
 	font-size: var(--para-size);
 	font-weight: normal;
 	margin-top: var(--p);
-	line-height: 1;
+	line-height: 1.5;
 	color: var(--white);
 }
 
@@ -196,6 +196,13 @@ a::selection {
 .about .icon {
 	font-size: calc(var(--icon-size) + 0.5rem);
 	background-color: var(--green);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: var(--p);
 }
 
 .footer > .para {
