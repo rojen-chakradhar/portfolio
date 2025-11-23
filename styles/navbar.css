@@ -8,9 +8,9 @@
 }
 
 .nav-link {
-	padding: 0.5rem 1rem;
+	width: 20%;
+	text-align: center;
 	border: 1px solid var(--black);
-	border-radius: 2rem;
 }
 
 .nav-link:hover {
@@ -18,7 +18,7 @@
 }
 
 .active {
-	border: var(--gray);
+	border-color: var(--gray);
 	background-color: var(--gray);
 	color: var(--white);
 }

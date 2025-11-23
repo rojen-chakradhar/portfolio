@@ -14,7 +14,6 @@
   align-items: center;
   justify-content: center;
 	border: 1px solid var(--black);
-	border-radius: 50%;
 }
 
 .icon {
@@ -23,7 +22,7 @@
 }
 
 .social-link:hover {
-  border: var(--gray);
+  border-color: var(--gray);
   background-color: var(--gray);
 }
 

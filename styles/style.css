@@ -51,6 +51,24 @@ body {
 	background-color: var(--white);
 }
 
+.content {
+	padding: 4rem;
+	text-align: center;
+}
+
+.heading {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+.para {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
 a {
 	color: var(--black);
 }
