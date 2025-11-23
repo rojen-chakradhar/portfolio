@@ -28,21 +28,21 @@ tab.forEach((elm) => {
 	});
 });
 
-let counter = document.getElementById("counter");
-let main = document.querySelector("main");
-let loader = document.querySelector(".loader");
-let count = 0;
-let interval = setInterval(() => {
-	main.style.display = "none";
-	if (count < 100) {
-		count++;
-		counter.style.opacity = count / 100;
-		counter.innerText = count + "%";
-	} else {
-		clearInterval(interval);
-		setTimeout(() => {
-			loader.style.display = "none";
-			main.style.display = "block";
-		}, 700);
-	}
-}, 40);
+// let counter = document.getElementById("counter");
+// let main = document.querySelector("main");
+// let loader = document.querySelector(".loader");
+// let count = 0;
+// let interval = setInterval(() => {
+// 	main.style.display = "none";
+// 	if (count < 100) {
+// 		count++;
+// 		counter.style.opacity = count / 100;
+// 		counter.innerText = count + "%";
+// 	} else {
+// 		clearInterval(interval);
+// 		setTimeout(() => {
+// 			loader.style.display = "none";
+// 			main.style.display = "block";
+// 		}, 700);
+// 	}
+// }, 40);
