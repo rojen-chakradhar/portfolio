@@ -14,13 +14,17 @@
 }
 
 .nav-link:hover {
-	background-color: oklch(0.967 0.001 286.375);
+	background-color: var(--light-gray);
 }
 
 .active {
 	border-color: var(--gray);
 	background-color: var(--gray);
 	color: var(--white);
+}
+
+.active:hover {
+	background-color: var(--gray);
 }
 
 .nav-text {
