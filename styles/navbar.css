@@ -5,13 +5,22 @@
 	padding: 0 0 1rem;
 	font-size: 18px;
 	text-transform: uppercase;
-	background-color: oklch(0.985 0 0);
 }
 
 .nav-link {
 	padding: 0.5rem 1rem;
-	border: 1px solid oklch(0.274 0.006 286.033);
+	border: 1px solid var(--black);
 	border-radius: 2rem;
+}
+
+.nav-link:hover {
+	background-color: oklch(0.967 0.001 286.375);
+}
+
+.active {
+	border: var(--gray);
+	background-color: var(--gray);
+	color: var(--white);
 }
 
 .nav-text {

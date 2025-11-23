@@ -1,0 +1,32 @@
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0 0;
+	text-transform: uppercase;
+	background-color: var(--white);
+}
+
+.social-link {
+  height: 2.5rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	border: 1px solid var(--black);
+	border-radius: 50%;
+}
+
+.icon {
+  font-size: 24px;
+	font-weight: 500;
+}
+
+.social-link:hover {
+  border: var(--gray);
+  background-color: var(--gray);
+}
+
+.social-link:hover .icon {
+  color: var(--white);
+}
