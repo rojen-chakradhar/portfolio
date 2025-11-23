@@ -3,8 +3,8 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 0 1rem;
-	font-size: 18px;
 	text-transform: uppercase;
+	border-bottom: 1px  solid var(--black);
 }
 
 .nav-link {
@@ -28,5 +28,6 @@
 }
 
 .nav-text {
+	font-size: 1.2rem;
 	font-weight: 700;
 }
