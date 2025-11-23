@@ -25,19 +25,24 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #222;
-	background-color: #fff;
+	color: oklch(0.274 0.006 286.033);
+	background-color: oklch(0.985 0 0);
 }
 
-main {
+.parent {
+	width: 50%;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: auto 1fr auto;
 	grid-column-gap: 0;
-	grid-row-gap: 2px;
-	background-color: #222;
+	grid-row-gap: 1px;
+	background-color: oklch(0.274 0.006 286.033);
+}
+
+.child {
+	width: 100%;
 }
 
 a {
-	color: #222;
+	color: oklch(0.274 0.006 286.033);
 }
