@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	/* outline: 1px dotted red; */
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+}
+
+:root {
+	--white: oklch(0.985 0 0);
+	--black: oklch(0.274 0.006 286.033);
+	--gray: oklch(0.37 0.013 285.805);
+	--light-gray: oklch(0.967 0.001 286.375);
+}
+
+body {
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.parent {
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: max-content 1fr max-content;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+}
+
+.child {
+	width: 100%;
+}
+
+.content {
+	padding: 4rem;
+	text-align: center;
+}
+
+.heading {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+.para {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+a {
+	color: var(--black);
+}
