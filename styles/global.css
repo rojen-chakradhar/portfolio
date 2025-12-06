@@ -13,10 +13,12 @@
 	font-style: normal;
 }
 
-html {
+html,
+body {
 	height: 100%;
 	width: 100%;
 	font-size: 16px;
+	color: var(--black);
 }
 
 :root {
@@ -26,31 +28,16 @@ html {
 	--light-gray: oklch(0.967 0.001 286.375);
 }
 
-body {
+.parent {
 	height: 100dvh;
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--black);
+	padding: 0 5vw;
+	rotate: -1deg;
 	background-color: var(--white);
 }
 
-.parent {
-	width: 50%;
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: max-content 1fr max-content;
-	grid-column-gap: 0;
-	grid-row-gap: 0;
-}
-
-.child {
-	width: 100%;
-}
-
 .content {
-	padding: 4rem;
+	padding: 4rem 0;
 	text-align: center;
 }
 

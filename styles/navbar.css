@@ -1,16 +1,30 @@
+.navbar {
+	padding: 1rem 0;
+}
+
+.navbar,
 .nav-links {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 0 1rem;
-	text-transform: uppercase;
-	border-bottom: 1px  solid var(--black);
 }
 
-.nav-link {
-	width: 20%;
+.nav-logo-text {
+	font-size: 1.2rem;
+}
+
+.nav-links {
+	column-gap: 5rem;
+}
+
+.nav-logo-link,
+.nav-link,
+.menu-bar {
+	padding: 0.2rem 1rem;
 	text-align: center;
 	border: 1px solid var(--black);
+	border-radius: 2rem;
+	box-shadow: 2px 2px 0 orangered;
 }
 
 .nav-link:hover {
@@ -27,7 +41,12 @@
 	background-color: var(--gray);
 }
 
-.nav-text {
+.nav-text,
+.menu-bar {
 	font-size: 1.2rem;
 	font-weight: 700;
 }
+
+/* .menu-bar {
+	display: none;
+} */
