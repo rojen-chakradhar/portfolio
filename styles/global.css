@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
 	margin: 0;
@@ -18,7 +18,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-size: 16px;
-	background-color: #FFF8DE;
+	background-color: #fff8de;
 }
 
 :root {
@@ -26,25 +26,21 @@ body {
 	--black: oklch(0.274 0.006 286.033);
 	--gray: oklch(0.37 0.013 285.805);
 	--light-gray: oklch(0.967 0.001 286.375);
-	--dbaige: #FFF2C6;
-	--baige: #FFF8DE;
-	--lblue: #AAC4F5;
-	--blue: #8CA9FF;
-	--ddblue: #3E548C;
-	--dblue: #6680B1;
-}
-
-.parent {
-	height: 100dvh;
-	width: 100%;
-	padding: 0 5vw;
+	--dbaige: #fff2c6;
+	--baige: #fff8de;
+	--lblue: #aac4f5;
+	--blue: #8ca9ff;
+	--ddblue: #3e548c;
+	--dblue: #6680b1;
 }
 
 .heading {
-	font-size: 15rem;
+  margin-top: 1rem;
 	font-weight: 900;
 	text-transform: uppercase;
 	line-height: 1;
+	font-family: "BBH Sans Bartle", sans-serif;
+	color: var(--ddblue);
 }
 
 .para {
