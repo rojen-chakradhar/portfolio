@@ -22,9 +22,10 @@
 .menu-bar {
 	padding: 0.2rem 1rem;
 	text-align: center;
-	border: 1px solid var(--black);
+	/* border: 1px solid var(--white); */
 	border-radius: 2rem;
-	box-shadow: 2px 2px 0 orangered;
+	box-shadow: 2px 2px 0 #ff5252, -1px -1px 0 #ff5252;
+	/* box-shadow: 2px 2px 0 #ff5252; */
 }
 
 .nav-link:hover {
@@ -32,13 +33,14 @@
 }
 
 .active {
-	border-color: var(--gray);
-	background-color: var(--gray);
+	box-shadow: 2px 2px 0 var(--black), -2px -2px 0 var(--black);
+	/* border-color: var(--gray); */
+	background-color: #ff5252;
 	color: var(--white);
 }
 
 .active:hover {
-	background-color: var(--gray);
+	background-color: var(--white);
 }
 
 .nav-text,
