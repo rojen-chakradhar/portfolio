@@ -24,6 +24,7 @@
 	font-weight: 700;
 	text-transform: capitalize;
 	color: #3E548C;
+	text-shadow: 2px 2px 0 #8ca9ff;
 	&:hover {
 		color: #6680B1;
 	}

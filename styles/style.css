@@ -7,8 +7,10 @@
 
 .fname {
 	font-size: 11.85rem;
+	text-shadow: 6px 6px 0 #8ca9ff;
 }
 
 .lname {
   font-size: 6rem;
+	text-shadow: 6px 6px 0 #8ca9ff;
 }
