@@ -34,6 +34,25 @@ body {
 	--dblue: #6680b1;
 }
 
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--ddblue);
+}
+
+.loader p {
+	font-size: 15vw;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--baige);
+}
+
 .heading {
   margin-top: 1rem;
 	font-weight: 900;

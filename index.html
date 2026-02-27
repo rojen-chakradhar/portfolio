@@ -51,37 +51,55 @@
     <link rel="stylesheet" href="./styles/sidenav.css">
     <link rel="stylesheet" href="./styles/catalog.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <link href='https://fonts.googleapis.com/css?family=BBH Sans Bartle' rel='stylesheet'>
     <link href= "https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   </head>
   <body>
-    <main class="parent">
-      <nav class="navbar child">
+    <section id="loader" class="loader">
+      <p>sup</p>
+    </section>
+    <div id="main">
+      <nav class="navbar">
+        <a href="./index.html"><h1 class="logo">Rojen Chakradhar</h1></a>
         <ul class="nav-links">
           <a href="./index.html" class="nav-link active">
-            <li class="nav-text">home</li>
-          </a>
-          <a href="./about.html" class="nav-link">
             <li class="nav-text">about</li>
           </a>
-          <a href="./projects.html" class="nav-link">
+          <a href="./about.html" class="nav-link">
             <li class="nav-text">projects</li>
           </a>
           <a href="./arts.html" class="nav-link">
             <li class="nav-text">art</li>
           </a>
+          <a href="./projects.html" class="nav-link">
+            <li class="nav-text">contact</li>
+          </a>
         </ul>
       </nav>
-      <section class="content hero child" id="home">
-        <h1 class="heading fname">rojen</h1>
-        <h1 class="heading lname">chakradhar</h1>
-      </section>
-      <section class="content about child" id="about">
-      </section>
-    </main>
+      <main>
+        <section class="hero">
+          <div class="baseline">
+            <p class="loc">based in madhyapur thimi, nepal</p>
+            <h2 class="me">UI/UX designer<br>& game developer</h2>
+          </div>
+        </section>
+        <section class="about">
+          <h2>about</h2>
+          <h3>Hi, I'm Rojen<br>I make beautiful designs and games</h3>
+          <p>I have 2+ years of experience in UI/UX design and I'm a Game Developer. I work mostly making websites and making games.</p>
+          <p>I like coding and maing games.</p>
+        </section>
+      </main>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js" integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+    <script>
+      const locomotiveScroll = new LocomotiveScroll();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./scripts/animation.js"></script>
   </body>
 </html>

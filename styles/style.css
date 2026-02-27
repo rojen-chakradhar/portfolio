@@ -1,16 +1,32 @@
-.hero {
-  position: relative;
+.hero, .about {
   height: 100dvh;
   width: 100%;
+  display: flex;
+  background-color: var(--white);
   overflow-x: hidden;
 }
 
-.fname {
-	font-size: 11.85rem;
-	text-shadow: 6px 6px 0 #8ca9ff;
+.baseline {
+  width: 100%;
+  display: flex;
+  align-self: self-end;
+  align-items: end;
+  justify-content: space-between;
+  padding: 5px 10px;
 }
 
-.lname {
-  font-size: 6rem;
-	text-shadow: 6px 6px 0 #8ca9ff;
+.loc {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.me {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--black);
 }

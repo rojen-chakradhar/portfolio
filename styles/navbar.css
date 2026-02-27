@@ -1,18 +1,26 @@
 .navbar {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 2rem;
-	background-color: #AAC4F5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px;
+}
+
+.logo {
+	font-size: 1.5rem;
+	line-height: 1;
+	font-weight: 600;
+	color: var(--black);
+	cursor: pointer;
 }
 
 .nav-links {
-	width: 0;
 	display: flex;
 	align-items: center;
 	column-gap: 2rem;
-	overflow: hidden;
-	transition: width 0.5s ease, padding 0.1s ease;
 }
 
 .nav-link:focus {
@@ -21,20 +29,18 @@
 
 .nav-text {
 	font-size: 1.2rem;
-	font-weight: 700;
-	text-transform: capitalize;
-	color: #3E548C;
-	text-shadow: 2px 2px 0 #8ca9ff;
-	&:hover {
-		color: #6680B1;
-	}
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	color: var(--black);
+	cursor: pointer;
+}
+
+.nav-text:hover {
+	color: var(--baige);
 }
 
 .active {
-	.nav-text{
-		color: #FFF8DE;
-		&:hover {
-			color: #FFF8DE;
-		}
-	}
+	text-decoration: underline;
+	text-decoration-color: var(--black);
 }
