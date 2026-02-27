@@ -1,49 +1,40 @@
 .navbar {
-	position: sticky;
-	top: 0;
-	width: 100%;
-	justify-content: space-between;
-	padding: var(--para-size) var(--p-side);
-  font-family: var(--heading-font);
-  text-transform: capitalize;
-  line-height: 1.2;
-  z-index: 2;
-}
-
-.logo a {
-  font-size: var(--sub-heading-size);
-	color: var(--white);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 2rem;
+	background-color: #AAC4F5;
 }
 
 .nav-links {
+	width: 0;
 	display: flex;
 	align-items: center;
-	column-gap: var(--p);
+	column-gap: 2rem;
+	overflow: hidden;
+	transition: width 0.5s ease, padding 0.1s ease;
 }
 
-.nav-link a {
-  position: relative;
-  font-size: var(--nav-size);
-	color: var(--white);
+.nav-link:focus {
+	outline: 1px solid var(--ddblue);
 }
 
-.nav-link a::after {
-	position: absolute;
-	content: "";
-	left: 0;
-	height: 100%;
-	width: 0;
-	border-bottom: 2px solid var(--green);
-	transition: width 0.2s linear;
+.nav-text {
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #3E548C;
+	text-shadow: 2px 2px 0 #8ca9ff;
+	&:hover {
+		color: #6680B1;
+	}
 }
 
-.nav-link a:hover::after {
-	width: 100%;
-}
-
-.burger-menu-icon {
-  /* display: none; */
-  font-size: var(--icon-size);
-  color: var(--white);
-	cursor: pointer;
+.active {
+	.nav-text{
+		color: #FFF8DE;
+		&:hover {
+			color: #FFF8DE;
+		}
+	}
 }
