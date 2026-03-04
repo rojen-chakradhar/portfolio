@@ -1,6 +1,5 @@
 var tl = gsap.timeline();
-tl.to(".loader1", 3, {
-	// height: "0",
+tl.to(".loader", 3, {
 	top: "-100dvh",
 	display: "none",
 	ease: Power4.easeInOut,
