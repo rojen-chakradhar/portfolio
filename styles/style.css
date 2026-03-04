@@ -5,7 +5,6 @@
   height: 100dvh;
   width: 100%;
   display: flex;
-  background-color: var(--white);
   overflow-x: hidden;
 }
 
@@ -17,7 +16,7 @@
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--primary-text);
   cursor: default;
 }
 
@@ -35,7 +34,7 @@
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--muted-text);
 }
 
 .me {
@@ -44,23 +43,24 @@
   line-height: 1.2;
   text-transform: uppercase;
   text-align: right;
-  color: var(--black);
+  color: var(--muted-text);
 }
 
 h2 {
   display: flex;
   align-items: center;
+  gap: 10px;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--muted-text);
 }
 
 hr {
   height: 4px;
   width: 100px;
   border: none;
-  background-color: var(--black);
+  background-color: var(--border);
 }
 
 .about {
@@ -73,18 +73,40 @@ h3 {
   font-size: 5rem;
   line-height: 1.2;
   font-weight: 600;
-  color: var(--black);
+  color: var(--primary-text);
 }
 
 span {
   font-size: 5.5rem;
   font-weight: 800;
-  color: var(--dblue);
+  color: var(--accent);
 }
 
 .about p {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--muted-text);
 }
 
+.projects {
+  gap: 20px;
+}
+
+.gallery {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 10px 10px;
+  background-color: var(--surface);
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.work {
+  flex-shrink: 0;
+  height: 100%;
+  width: 400px;
+  background-color: var(--border);
+}
