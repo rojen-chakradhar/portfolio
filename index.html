@@ -58,84 +58,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   </head>
   <body>
-    <section class="loader">
-      <p>sup</p>
+    <section id="loader" class="loader">
+      <p>welcome</p>
     </section>
     <div id="main">
       <nav class="navbar">
         <a href="./index.html"><h1 class="logo">Rojen Chakradhar</h1></a>
         <ul class="nav-links">
-          <a href="./index.html" class="nav-link">
+          <a href="./index.html#" class="nav-link active">
+            <li class="nav-text">home</li>
+          </a>
+          <a href="./index.html#about" class="nav-link">
             <li class="nav-text">about</li>
           </a>
-          <a href="./about.html" class="nav-link active">
-            <li class="nav-text">projects</li>
+          <a href="./index.html#web" class="nav-link">
+            <li class="nav-text">web projects</li>
           </a>
-          <a href="./arts.html" class="nav-link">
+          <a href="./index.html#game" class="nav-link">
+            <li class="nav-text">games</li>
+          </a>
+          <a href="./index.html#art" class="nav-link">
             <li class="nav-text">art</li>
           </a>
-          <a href="./projects.html" class="nav-link">
+          <a href="./index.html#contact" class="nav-link">
             <li class="nav-text">contact</li>
           </a>
         </ul>
       </nav>
       <main>
-        <section class="container works-container">
-          <div class="swiper works">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/smoothiejuicy.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/swaphead.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/Travelone.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/weatherchecker.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </section>
-        <section clas="container arts-container">
-          <div class="swiper arts">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/smoothiejuicy.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/swaphead.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/Travelone.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="./assets/images/weatherchecker.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <!-- <section class="baseline">
+        <section class="hero">
+          <h1 class="name">Rojen Chakradhar</h1>
+          <div class="baseline">
             <p class="loc">based in madhyapur thimi, nepal</p>
             <h2 class="me">UI/UX designer<br>& game developer</h2>
-          </section> -->
+          </div>
         </section>
+        <section id="about" class="about">
+          <h2><hr> about</h2>
+          <h3>Hi, I'm <span>Rojen Chakradhar.</span><br>I make games and beautiful designs, and I ship them.</h3>
+          <p>I have 2+ years of experience in UI/UX design and I'm a Game Developer. I work mostly making websites and making games.</p>
+          <p>I like doing things.</p>
+        </section>
+        <section id="web" class="projects web">
+          <h2><hr>Web Projects</h2>
+          <section class="gallery">
+            <article class="work">
+              <img src="" alt="work">
+              <h4>Work</h4>
+            </article>
+          </section>
+        </section>
+        <section id="game" class="projects games">
+          <h2><hr>Games</h2>
+        </section>
+        <section id="art" class="projects art">
+          <h2><hr>Drawings</h2>
+        </section>
+        <section id="up-coming" class="projects pending">
+          <h2><hr>Upcoming</h2>
+        </section>
+        <footer id="contact" class="contact">
+          <h2><hr>Contact</h2>
+        </footer>
       </main>
     </div>
     <!-- <script>
       alert("This site is under construction.");
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
       const swiper = new Swiper(...)
-    </script>
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
     <script>
       const locomotiveScroll = new LocomotiveScroll();
