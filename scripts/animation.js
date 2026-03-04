@@ -27,7 +27,7 @@ tl.from(".me", 1, {
 })
 
 tl.from(".name", 1, {
-	marginLeft: 1300,
+	marginLeft: 1400,
 	ease: Power4.easeOut,
 })
 
