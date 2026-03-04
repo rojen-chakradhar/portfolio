@@ -44,13 +44,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--ddblue);
+	z-index: 51;
 }
 
 .loader p {
 	font-size: 15vw;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: var(--baige);
+	color: var(--white);
 }
 
 .heading {

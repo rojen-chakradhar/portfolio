@@ -6,7 +6,49 @@ tl.to("#loader", 3, {
 	delays: "0.5",
 });
 
-tl.from(".navbar", 1, {
+tl.from(".logo", 1, {
 	y: -100,
 	ease: Power4.easeOut,
 })
+
+tl.from(".nav-links", 1, {
+	y: -100,
+	ease: Power4.easeOut,
+})
+
+tl.from(".loc", 1, {
+	x: -500,
+	ease: Power4.easeOut,
+})
+
+tl.from(".me", 1, {
+	x: 500,
+	ease: Power4.easeOut,
+})
+
+tl.from(".name", 1, {
+	marginLeft: 1300,
+	ease: Power4.easeOut,
+})
+
+const horTextAnimation = () => {
+  const triggers = ScrollTrigger.getAll();
+  triggers.forEach((trigger) => trigger.kill());
+  const horText = document.querySelector(".name");
+  if (horText) {
+    gsap.to(horText, {
+      x: () => -(horText.offsetWidth - window.innerWidth),
+      ease: "linear",
+      scrollTrigger: {
+        trigger: ".hero",
+        pin: true,
+        scrub: true,
+        invalidateOnRefresh: true,
+        end: () => `+=${horText.offsetWidth - window.innerWidth}`
+      }
+    });
+    ScrollTrigger.refresh();
+  }
+};
+horTextAnimation();
+window.addEventListener("resize", horTextAnimation);
