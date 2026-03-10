@@ -10,10 +10,10 @@
 
 .hero .name {
   align-self: center;
-  font-size: 23rem;
+  font-size: 22rem;
   text-wrap: nowrap;
   white-space: nowrap;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--primary-text);
@@ -32,14 +32,14 @@
 
 .loc {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--muted-text);
 }
 
 .me {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: right;

@@ -35,13 +35,14 @@
 	text-transform: uppercase;
 	color: var(--primary-text);
 	cursor: pointer;
-	transition: color 0.3s linear;
+	transition: color 0.2s linear;
 }
 
 .active {
 	text-decoration: underline;
 	text-decoration-color: var(--border);
 	color: var(--accent);
+	mix-blend-mode: multiply;
 }
 
 .nav-link:hover .nav-text {
