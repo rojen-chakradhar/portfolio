@@ -8,6 +8,12 @@
   overflow-x: hidden;
 }
 
+.hero,
+.about,
+.projects {
+  display: none;
+}
+
 .hero .name {
   align-self: center;
   font-size: 22rem;
