@@ -4,6 +4,7 @@
 	left: 0;
 	width: 100%;
 	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 20px;
@@ -14,7 +15,7 @@
 	font-size: 1.5rem;
 	line-height: 1;
 	font-weight: 600;
-	color: var(--black);
+	color: var(--primary-text);
 	cursor: pointer;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .nav-link:focus {
-	outline: 1px solid var(--ddblue);
+	outline: 1px solid var(--border);
 }
 
 .nav-text {
@@ -33,11 +34,25 @@
 	font-weight: 600;
 	line-height: 1;
 	text-transform: uppercase;
-	color: var(--black);
+	color: var(--primary-text);
 	cursor: pointer;
+	transition: color 0.2s linear;
 }
 
 .active {
 	text-decoration: underline;
-	text-decoration-color: var(--black);
+	text-decoration-color: var(--border);
+	color: var(--accent);
+	mix-blend-mode: multiply;
+}
+
+.nav-link:hover .nav-text {
+	text-decoration: underline;
+	text-decoration-color: var(--border);
+	color: var(--accent);
+}
+
+.nav-links:has(.nav-link:hover) .nav-link:not(:hover) .nav-text {
+	text-decoration: none;
+	color: var(--muted-text);
 }
