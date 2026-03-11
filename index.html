@@ -100,30 +100,52 @@
           <p>I like doing things.</p>
         </section>
         <section id="web" class="projects web">
-          <h2><hr>Web Projects</h2>
-          <section class="gallery">
-            <article class="work">
-              <img src="" alt="work">
-              <h4>Work</h4>
-            </article>
-            <article class="work">
-              <img src="" alt="work2">
-              <h4>Work2</h4>
-            </article>
-            <article class="work">
-              <img src="" alt="work3">
-              <h4>Work3</h4>
-            </article>
+          <section class="container">
+            <h2><hr>Web Projects</h2>
+            <section class="nav-arrows">
+                <button id="webPrevBtn">←</button>
+                <button id="webNextBtn">→</button>
+            </section>
+          </section>
+          <section class="gallery" id="websContainer">
+            <section id="webTrack" class="track"></section>
           </section>
         </section>
         <section id="game" class="projects games">
-          <h2><hr>Games</h2>
+          <section class="container">
+            <h2><hr>Games</h2>
+            <section class="nav-arrows">
+                <button id="gamesPrevBtn">←</button>
+                <button id="gamesNextBtn">→</button>
+            </section>
+          </section>
+          <section class="gallery" id="gamessContainer">
+            <section id="gamesTrack" class="track"></section>
+          </section>
         </section>
         <section id="art" class="projects art">
-          <h2><hr>Drawings</h2>
+          <section class="container">
+            <h2><hr>Drawings</h2>
+            <section class="nav-arrows">
+                <button id="drawingPrevBtn">←</button>
+                <button id="drawingNextBtn">→</button>
+            </section>
+          </section>
+          <section class="gallery" id="drawingsContainer">
+            <section id="drawingTrack" class="track"></section>
+          </section>
         </section>
         <section id="up-coming" class="projects pending">
-          <h2><hr>Upcoming</h2>
+          <section class="container">
+            <h2><hr>Upcoming</h2>
+            <section class="nav-arrows">
+                <button id="upComingPrevBtn">←</button>
+                <button id="upComingNextBtn">→</button>
+            </section>
+          </section>
+          <section class="gallery" id="upComingsContainer">
+            <section id="upComingTrack" class="track"></section>
+          </section>
         </section>
         <footer id="contact" class="contact">
           <h2><hr>Contact</h2>
@@ -141,14 +163,6 @@
         </footer>
       </main>
     </div>
-    <!-- <script>
-      alert("This site is under construction.");
-    </script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="module">
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
-      const swiper = new Swiper(...)
-    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
     <script>
       const locomotiveScroll = new LocomotiveScroll();
