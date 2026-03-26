@@ -181,12 +181,13 @@ document.getElementById('webPrevBtn').onclick = () => {
 const gamesImagePaths = [
   {
     name: "Daydream Parkour",
-    imageSrc: "https://img.itch.zone/aW1nLzIzMzkzODE4LnBuZw==/315x250%23c/5COdt0.png",
+    imageSrc: "./assets/games/daydream parkour.png",
 		href: "https://rojenrandom.itch.io/daydream-parkour",
   },
 	{
-		name: "Dungeon Parkour",
-		imageSrc: "assets/drawings/IMG_20240630_214653.jpg",
+		name: "Snake Game",
+		imageSrc: "./assets/games/snake-game.webp",
+		href: "https://rojenrandom.itch.io/snake-game",
 	},
 ];
 
@@ -197,10 +198,6 @@ gamesImagePaths.forEach(image => {
     gamesTrack.innerHTML += `
         <article class="work">
             <img src="${image.imageSrc}" alt="Art ${image.name}" draggable="false">
-						<!-- <div class="info"> -->
-            	<h4>${image.name}</h4>
-							<!-- <a href="${image.link}" target="_blank"><button>Live Demo</button></a>
-						</div> -->
         </article>`;
 });
 
