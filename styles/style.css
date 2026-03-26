@@ -146,7 +146,7 @@ img {
 }
 
 .nav-arrows button {
-	font-size: 24px;
+	font-size: 36px;
   border: none;
 	color: white;
 	background: none;
@@ -156,4 +156,10 @@ img {
 
 .nav-arrows button:hover {
 	opacity: 1;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
