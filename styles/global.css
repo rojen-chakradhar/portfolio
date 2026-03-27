@@ -7,7 +7,6 @@
 	text-decoration: none;
 	list-style: none;
 	scroll-behavior: smooth;
-	/* outline: 1px dotted red; */
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -22,23 +21,12 @@ body {
 }
 
 :root {
-	/* Industrial monochrome */
-	/* --background: #0D0D0D; */
 	--background: #090909;
 	--surface: #1A1A1A;
 	--primary-text: #F2F2F2;
 	--muted-text: #8A8A8A;
 	--accent: #FF3B3B;
 	--border: #2A2A2A;
-	/* --white: oklch(0.985 0 0);
-	--gray: oklch(0.37 0.013 285.805);
-	--light-gray: oklch(0.967 0.001 286.375);
-	--dbaige: #fff2c6;
-	--baige: #fff8de;
-	--lblue: #aac4f5;
-	--blue: #8ca9ff;
-	--ddblue: #3e548c;
-	--dblue: #6680b1; */
 }
 
 .loader {
@@ -48,7 +36,6 @@ body {
 	height: 100dvh;
 	width: 100%;
 	display: flex;
-	display: none;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--surface);

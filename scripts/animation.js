@@ -6,31 +6,6 @@ tl.to("#loader", 3, {
 	delays: "0.2",
 });
 
-// tl.from(".logo", 1, {
-// 	y: -100,
-// 	ease: Power4.easeOut,
-// });
-
-// tl.from(".nav-links", 1, {
-// 	y: -100,
-// 	ease: Power4.easeOut,
-// });
-
-// tl.from(".loc", 1, {
-// 	x: -500,
-// 	ease: Power4.easeOut,
-// });
-
-// tl.from(".me", 1, {
-// 	x: 500,
-// 	ease: Power4.easeOut,
-// });
-
-// tl.from(".name", 1, {
-// 	marginLeft: 1400,
-// 	ease: Power4.easeOut,
-// });
-
 const triggers = ScrollTrigger.getAll();
 triggers.forEach((trigger) => trigger.kill());
 
