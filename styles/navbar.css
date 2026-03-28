@@ -49,3 +49,10 @@
 	text-decoration: none;
 	color: var(--muted-text);
 }
+
+.menu-icon {
+	display: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: var(--primary-text);
+}

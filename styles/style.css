@@ -1,3 +1,23 @@
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background);
+	z-index: 51;
+}
+
+.loader p {
+	font-size: 15vw;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--primary-text);
+}
+
 .hero,
 .about,
 .projects,
@@ -78,7 +98,7 @@ h3 {
 }
 
 span {
-  font-size: 5.5rem;
+  font-size: 1em;
   font-weight: 800;
   color: var(--accent);
 }

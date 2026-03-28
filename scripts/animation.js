@@ -1,5 +1,4 @@
-var tl = gsap.timeline();
-tl.to("#loader", 3, {
+gsap.to("#loader", 3, {
 	y: -700,
 	display: "none",
 	ease: Power4.easeInOut,
