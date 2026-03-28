@@ -1,17 +1,49 @@
 .sidenav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100%;
+  visibility: hidden;
+  background-color: var(--background);
+  z-index: 60;
 }
 
-.sidenav-links {
-  position: absolute;
-  right: 0;
+.sidenav .up {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px;
+  margin-bottom: 30px;
+}
+
+.side-nav-links {
+  display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  gap: 2px;
+  padding: 2px 0;
+  background-color: var(--surface);
 }
 
-.sidenav-link a {
-  padding: 1vw var(--p);
-  font-size: var(--nav-size);
-  color: var(--white);
-  background-color: var(--green);
+.side-nav-text {
+  display: block;
+  padding: 1vh 10px;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  background-color: var(--background);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.side-nav-text:hover {
+  background-color: var(--surface);
+}
+
+.sideav .menu-icon {
+  display: inline-block;
+  font-size: 2rem;
 }

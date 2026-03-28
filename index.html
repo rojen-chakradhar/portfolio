@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/sidenav.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link href= "https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -78,8 +79,34 @@
             <li class="nav-text">contact</li>
           </a>
         </ul>
-        <i class="ri-menu-5-line menu-icon"></i>
+        <i class="ri-menu-5-line menu-icon" onclick="menuOpen()"></i>
       </nav>
+      <aside class="sidenav">
+        <ul class="up">
+          <a href="./index.html"><h4 class="logo">Rojen Chakradhar</h4></a>
+          <i class="ri-close-line menu-icon" onclick="menuClose()"></i>
+        </ul>
+        <ul class="side-nav-links">
+          <a href="./index.html#" class="side-nav-link">
+            <li class="side-nav-text">home</li>
+          </a>
+          <a href="./index.html#about" class="side-nav-link">
+            <li class="side-nav-text">about</li>
+          </a>
+          <a href="./index.html#web" class="side-nav-link">
+            <li class="side-nav-text">web projects</li>
+          </a>
+          <a href="./index.html#game" class="side-nav-link">
+            <li class="side-nav-text">games</li>
+          </a>
+          <a href="./index.html#art" class="side-nav-link">
+            <li class="side-nav-text">art</li>
+          </a>
+          <a href="./index.html#contact" class="side-nav-link">
+            <li class="side-nav-text">contact</li>
+          </a>
+        </ul>
+      </aside>
       <main>
         <section class="hero">
           <h1 class="name">Rojen Chakradhar</h1>
