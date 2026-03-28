@@ -1,102 +1,164 @@
-/* @media (min-width: 769px) {
-	.nav-links {
-		display: flex;
+@media (max-width: 425px) {
+	.hero .name {
+		font-size: 10rem;
 	}
-
-	.burger-menu-icon {
-		display: none;
+	.loc {
+		font-size: 0.8rem;
 	}
-
-	.sidenav:focus {
-		display: none;
-		pointer-events: none;
-		user-select: none;
+	.me {
+		font-size: 1.2rem;
 	}
-
-	.navbar {
-		padding: 1dvw var(--p);
+	h3 {
+		font-size: 2.5rem;
 	}
-
-	.logo-nav-link a {
-		font-size: 2dvw;
+	span {
+		font-size: 1.2em;
 	}
-
-	.nav-link a {
-		font-size: 1.4dvw;
+	.about p {
+		font-size: 1rem;
 	}
-}
-
-@media (min-width: 426px) {
-	.hero-img {
+	h2 {
+		font-size: 1.2rem;
+	}
+	.projects {
 		height: 80dvh;
-		width: 30dvw;
+		flex-direction: column;
 	}
-
-	.about {
-		padding: 0dvw;
+	.container {
+		height: 25%;
+		width: 100%;
 	}
-
-	.container2 {
-		padding: 5dvw;
+	.gallery {
+		height: max-content;
+		max-height: 400px;
+		padding: 10px;
+		width: 100%;
 	}
-
-	.decs {
-		font-size: 20px;
-		margin-top: 5dvw;
+	img {
+		height: 100%;
 	}
-}
-
-@media (min-width: 321px) and (max-width: 425px) {
-	.side-nav-logo a {
-		font-size: 35px;
+	#drawingsContainer img {
+		height: 300px;
+	}
+	.contact-link {
+		font-size: 1rem;
+	}
+	.contact {
+		padding: 50px 10px 10px;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		gap: 40px;
+	}
+	.contact-link a {
+		font-size: 1.2em;
+		text-wrap: nowrap;
+	}
+	.social-links {
+		column-gap: 1.5rem;
 	}
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-	.side-nav-logo a {
-		font-size: 72px;
+	.loc {
+		font-size: 0.8rem;
 	}
-
-	.side-nav-link a {
-		height: 80px;
-		font-size: 40px;
+	.me {
+		font-size: 2rem;
 	}
-
-	.side-nav-link a span {
-		font-size: 40px;
+	h3 {
+		font-size: 3rem;
 	}
-
-	.arrow-up-icon {
-		font-size: 50px;
+	span {
+		font-size: 1.5em;
 	}
-
-	.social-link a {
-		height: 50px;
-		font-size: 30px;
+	.about p {
+		font-size: 1.2rem;
 	}
-} */
+	h2 {
+		font-size: 2rem;
+	}
+	.contact-link {
+		font-size: 1rem;
+	}
+}
 
-/* large screens */
+@media (max-width: 950px) {
+	.nav-links {
+		display: none;
+	}
+	.menu-icon {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+	.hero .name {
+		font-size: 20rem;
+	}
+	.loc {
+		font-size: 1rem;
+	}
+	.me {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 4rem;
+	}
+	span {
+		font-size: 1.2em;
+	}
+	.about p {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	.contact-link a {
+		display: block;
+		font-size: 1.2em;
+		text-wrap: nowrap;
+	}
+}
+
 @media (min-width: 1441px) {
-  :root{
-    --p: 10vw;
-    --heading-size: 15rem;
-    --sub-heading-size: 5rem;
-    --para-size: 4rem;
-    --nav-size: 4rem;
-    --icon-size: 5rem;
-  }
-  .about {
-    height: max-content;
-    row-gap: var(--p);
-  }
-  .hero .para {
-    width: 100%;
-  }
-  .cta {
-    padding: var(--para-size) var(--p);
-  }
-  .tabs .cta {
-    padding: var(--para-size) 0;
-  }
+	.logo {
+		font-size: 2.5rem;
+	}
+	.nav-text {
+		font-size: 2rem;
+	}
+	.hero .name {
+		font-size: 25rem;
+	}
+	.loc {
+		font-size: 1.5rem;
+	}
+	.me {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 6rem;
+	}
+	span {
+		font-size: 1.2em;
+	}
+	.about p {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 4rem;
+	}
+	.contact-link {
+		font-size: 2rem;
+	}
+	.contact-link a {
+		display: block;
+		font-size: 1.2em;
+		text-wrap: nowrap;
+	}
+	.social-link {
+		height: 70px;
+		font-size: 2rem;
+	}
 }
