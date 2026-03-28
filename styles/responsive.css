@@ -1,6 +1,6 @@
 @media (max-width: 425px) {
 	.hero .name {
-		font-size: 10rem;
+		font-size: 8rem;
 	}
 	.loc {
 		font-size: 0.8rem;
@@ -60,6 +60,9 @@
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+	.hero .name {
+		font-size: 15rem;
+	}
 	.loc {
 		font-size: 0.8rem;
 	}
@@ -94,7 +97,7 @@
 
 @media (min-width: 769px) and (max-width: 1000px) {
 	.hero .name {
-		font-size: 20rem;
+		font-size: 18rem;
 	}
 	.loc {
 		font-size: 1rem;
