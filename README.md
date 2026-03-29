@@ -8,7 +8,6 @@ This is my personal portfolio. A site where I showcase my projects, skills, and 
 - JavaScript
 **Library:**
 - GSAP
-- Locomotive
 
 ## Features
 - Smooth and minimal scroll animations powered by GSAP and Locomotive
