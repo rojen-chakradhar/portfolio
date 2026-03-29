@@ -33,7 +33,7 @@ webImagePaths.forEach(image => {
     webTrack.innerHTML += `
         <article class="work">
 					<h4>${image.name}</h4>
-          <img src="${image.src}" alt="Art ${image.name}" draggable="false">
+          <img src="${image.src}" alt="Art ${image.name}" draggable="false" loading="lazy">
 					<a href="${image.href}" target="_blank"><button class="project-btn">view</button></a>
         </article>`;
 });
@@ -66,7 +66,7 @@ gamesImagePaths.forEach(image => {
   gamesTrack.innerHTML += `
     <article class="work">
 			<h4>${image.name}</h4>
-      <img src="${image.imageSrc}" alt="Art ${image.name}" draggable="false">
+      <img src="${image.imageSrc}" alt="Art ${image.name}" draggable="false" loading="lazy">
 			<a href="${image.href}" target="_blank"><button class="project-btn">play</button></a>
     </article>`;
 });
@@ -233,7 +233,7 @@ drawingImagePaths.forEach(image => {
     drawingTrack.innerHTML += `
         <article class="work">
 					<h4>${image.name}</h4>
-          <img src="${image.src}" alt="Art ${image.name}" draggable="false">
+          <img src="${image.src}" alt="Art ${image.name}" draggable="false" loading="lazy">
         </article>`;
 });
 
@@ -246,3 +246,7 @@ document.getElementById('drawingNextBtn').onclick = () => {
 document.getElementById('drawingPrevBtn').onclick = () => {
     drawingsContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
 };
+
+setTimeout(() => {
+	ScrollTrigger.refresh();
+}, 100);
