@@ -17,7 +17,6 @@ body {
 	height: 100%;
 	width: 100%;
 	font-size: 16px;
-	background-color: var(--background);
 }
 
 :root {
@@ -27,4 +26,17 @@ body {
 	--muted-text: #8A8A8A;
 	--accent: #FF3B3B;
 	--border: #2A2A2A;
+}
+
+html,
+body {
+  --s: 50px;
+  --c1: #0f0f0f50;
+  --c2: #090909;
+  --_g: #090909 90deg,var(--c1) 0;
+  background: 
+    conic-gradient(from 90deg at 2px 2px,var(--_g)),
+    conic-gradient(from 90deg at 1px 1px,var(--_g)),
+    var(--c2);
+  background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
 }
