@@ -15,6 +15,11 @@ const webImagePaths = [
 		href: "https://kabirkhajaghar.netlify.app",
 	},
 	{
+		name: "Interior Point Nepal",
+		src: "./assets/images/interiorpointnepal.netlify.app_.webp",
+		href: "https://interiorpointnepal.netlify.app",
+	},
+	{
 		name: "Image Editor",
 		src: "./assets/images/rojens-tools.netlify.app_.webp",
 		href: "https://rojen-tools.netlify.app",
@@ -23,6 +28,21 @@ const webImagePaths = [
 		name: "Adopt Dogs",
 		src: "./assets/images/dogsadopt.netlify.app_.webp",
 		href: "https://dogsadopt.netlify.app",
+	},
+	{
+		name: "Travelone",
+		src: "./assets/images/travelone.webp",
+		href: "https://travelone-home.vercel.app",
+	},
+	{
+		name: "Smoothie Juicy",
+		src: "./assets/images/smoothiejuicy.webp",
+		href: "https://smoothiejuicy.netlify.app",
+	},
+	{
+		name: "Swap Head",
+		src: "./assets/images/swaphead.webp",
+		href: "https://swapheads.netlify.app",
 	},
 ];
 
