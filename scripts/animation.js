@@ -1,5 +1,3 @@
-const scroller = new LocomotiveScroll();
-
 const revealSite = () => {
 	const loader = document.querySelector("#loader");
 	if (loader) {
@@ -32,6 +30,7 @@ const horTextAnimation = () => {
 			},
 		});
 	}
+	ScrollTrigger.refresh();
 };
 
 const forceTimer = setTimeout(revealSite, 3000);
