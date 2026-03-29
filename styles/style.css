@@ -29,13 +29,8 @@
   display: flex;
 }
 
-main {
-  overflow: visible !important;
-}
-
 #main {
-  height: auto;
-  width: 100%;
+  overflow: hidden;
 }
 
 .hero {
@@ -51,7 +46,7 @@ main {
 .hero .name {
   align-self: center;
   display: inline-block !important;
-  font-size: 22.5rem;
+  font-size: clamp(4rem, 15vw, 18rem);
   text-wrap: nowrap;
   white-space: nowrap;
   font-weight: 900;
@@ -228,4 +223,46 @@ img {
 
 .project-btn:hover {
   background-color: var(--surface);
+}
+
+/* ==========================
+   🔥 HERO FIX
+========================== */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* better scaling */
+.hero .name {
+  font-size: clamp(4rem, 15vw, 18rem);
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================
+   ✨ GRID BACKGROUND
+========================== */
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1px;
+  z-index: 1;
+}
+
+.grid-box {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 0.05;
+  transition: opacity 0.3s;
+}
+
+/* ==========================
+   🎬 LOADER FIX
+========================== */
+.loader {
+  position: fixed; /* 🔥 important fix */
+  z-index: 9999;
 }
