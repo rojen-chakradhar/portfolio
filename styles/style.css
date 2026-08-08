@@ -1,5 +1,10 @@
+body.pre-loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .loader {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100dvh;
@@ -9,7 +14,7 @@
 	justify-content: center;
 	background-color: var(--background);
 	z-index: 80;
-  pointer-events: none;
+  pointer-events: auto;
   transition: visibility 1.5s;
 }
 

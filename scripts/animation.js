@@ -1,3 +1,5 @@
+document.body.classList.add('pre-loading')
+
 const revealSite = () => {
 	const loader = document.querySelector("#loader");
 	if (loader) {
@@ -8,6 +10,7 @@ const revealSite = () => {
 			delay: 0.2,
 			onComplete: () => {
 				loader.style.display = "none";
+    		document.body.classList.remove('pre-loading');
 				horTextAnimation();
 			},
 		});
