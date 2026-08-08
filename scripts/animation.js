@@ -1,3 +1,8 @@
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.body.classList.add('pre-loading')
 
 const revealSite = () => {
@@ -11,10 +16,14 @@ const revealSite = () => {
 			onComplete: () => {
 				loader.style.display = "none";
     		document.body.classList.remove('pre-loading');
+				ScrollTrigger.refresh();
 				horTextAnimation();
-			},
-		});
-	}
+      },
+    });
+  } else {
+    document.body.classList.remove('pre-loading');
+    horTextAnimation();
+  }
 };
 
 const horTextAnimation = () => {
@@ -40,6 +49,7 @@ const forceTimer = setTimeout(revealSite, 3000);
 
 window.addEventListener("load", () => {
 	clearTimeout(forceTimer);
+	window.scrollTo(0, 0);
 	revealSite();
 });
 

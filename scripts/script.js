@@ -1,5 +1,20 @@
 const webImagePaths = [
   {
+    name: "Chamaa Brownies",
+    src: "./assets/images/chamaa-brownies.netlify.app.webp",
+		href: "https://chamaa-brownies.netlify.app",
+  },
+  {
+    name: "Habit Tracker",
+    src: "./assets/images/habit-track-rojen.netlify.app.webp",
+		href: "https://habit-track-rojen.netlify.app/",
+  },
+  {
+    name: "Library Management System",
+    src: "./assets/images/tu-lms.netlify.app_index.html.webp",
+		href: "https://tu-lms.netlify.app/",
+  },
+  {
     name: "Art Showcase",
     src: "./assets/images/art.rojen.name.np_.webp",
 		href: "https://art.rojen.name.np",
