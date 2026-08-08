@@ -28,6 +28,10 @@ body {
 	--border: #2A2A2A;
 }
 
+::selection {
+	background-color: var(--accent);
+}
+
 html,
 body {
   --s: 50px;
